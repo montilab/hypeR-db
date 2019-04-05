@@ -3,13 +3,13 @@ hyperdb
 
 A [hypeR](https://github.com/montilab/hypeR) repository for commonly used open source genesets
 
-[![](https://img.shields.io/github/last-commit/anfederico/hyperdb.svg)](https://github.com/anfederico/hyperdb/commits/master) [![](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![](https://img.shields.io/github/last-commit/montilab/hyperdb.svg)](https://github.com/montilab/hyperdb/commits/master) [![](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 
 ### Usage
 
 ``` r
 get.gset <- function(gset) {
-    url <- "https://github.com/anfederico/hyperdb/raw/master/data/genesets/{0}.rds"
+    url <- "https://github.com/montilab/hyperdb/raw/master/data/genesets/{0}.rds"
     temp <- tempfile(fileext=".rds")
     httr::GET(gsub("\\{0}", gset, url), 
               .send_headers = c("Accept" = "application/octet-stream"),
