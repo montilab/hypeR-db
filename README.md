@@ -3,7 +3,7 @@ hyperdb
 
 A [hypeR](https://github.com/montilab/hypeR) repository for commonly used open source genesets
 
-[![](https://img.shields.io/github/last-commit/montilab/hypeR.svg)](https://github.com/anfederico/hyperdb/commits/master) [![](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![](https://img.shields.io/github/last-commit/anfederico/hyperdb.svg)](https://github.com/anfederico/hyperdb/commits/master) [![](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 
 ### Usage
 
