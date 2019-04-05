@@ -10,10 +10,10 @@ A [hypeR](https://github.com/montilab/hypeR) repository for commonly used open s
 ``` r
 get.gset <- function(gset) {
     url <- "https://github.com/anfederico/hyperdb/raw/master/data/genesets/{0}.rds"
-    r <- httr::GET(gsub("\\{0}", gset, url))
-    raw <- httr::content(r, "raw", encoding="gzip")
-    temp <- tempfile(fileext = ".rds")
-    writeBin(raw, temp)
+    temp <- tempfile(fileext=".rds")
+    httr::GET(gsub("\\{0}", gset, url), 
+              .send_headers = c("Accept" = "application/octet-stream"),
+              httr::write_disk(temp, overwrite=TRUE))    
     return(readRDS(temp))
 }
 
