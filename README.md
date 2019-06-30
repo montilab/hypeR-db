@@ -3,7 +3,8 @@ hyperdb
 
 A [hypeR](https://github.com/montilab/hypeR) repository for commonly used open source genesets
 
-[![](https://img.shields.io/github/last-commit/montilab/hyperdb.svg)](https://github.com/montilab/hyperdb/commits/master) [![](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![](https://img.shields.io/github/last-commit/montilab/hyperdb.svg)](https://github.com/montilab/hyperdb/commits/master) 
+[![](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 
 ### Usage
 
@@ -22,4 +23,4 @@ gset <- get.gset("Cancer_Cell_Line_Encyclopedia")
 
 ### Disclaimer
 
-All genesets were downloaded and processed from the publicly available [libraries](https://amp.pharm.mssm.edu/Enrichr/#stats) hosted by [Enrichr](https://amp.pharm.mssm.edu/Enrichr/).
+Most genesets were downloaded and processed from the publicly available [libraries](https://amp.pharm.mssm.edu/Enrichr/#stats) hosted by [Enrichr](https://amp.pharm.mssm.edu/Enrichr/).
