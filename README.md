@@ -9,18 +9,15 @@ A [hypeR](https://github.com/montilab/hypeR) repository for commonly used open s
 ### Usage
 
 ``` r
-get.gset <- function(gset) {
-    url <- "https://github.com/montilab/hyperdb/raw/master/data/genesets/{0}.rds"
+get.rgsets <- function(rgsets) {
+    url <- "https://github.com/montilab/hyperdb/raw/master/data/{0}.rds"
     temp <- tempfile(fileext=".rds")
-    httr::GET(gsub("\\{0}", gset, url), 
+    httr::GET(gsub("\\{0}", rgsets, url), 
               .send_headers = c("Accept" = "application/octet-stream"),
               httr::write_disk(temp, overwrite=TRUE))    
     return(readRDS(temp))
 }
 
-gset <- get.gset("Cancer_Cell_Line_Encyclopedia")
+rgsets <- get.rgsets("REACTOME/REACTOME_v70.0")
+rgsets <- get.rgsets("KEGG/KEGG_v92.0")
 ```
-
-### Disclaimer
-
-Most genesets were downloaded and processed from the publicly available [libraries](https://amp.pharm.mssm.edu/Enrichr/#stats) hosted by [Enrichr](https://amp.pharm.mssm.edu/Enrichr/).
