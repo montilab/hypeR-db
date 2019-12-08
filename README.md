@@ -1,4 +1,4 @@
-hyperdb
+hypeR-db
 =====
 
 A [hypeR](https://github.com/montilab/hypeR) repository for relational genesets
