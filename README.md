@@ -1,7 +1,7 @@
 hypeR-db
 =====
 
-A [hypeR](https://github.com/montilab/hypeR) repository for relational genesets
+A [hypeR](https://github.com/montilab/hypeR) repository for relational and flat genesets
 
 [![](https://img.shields.io/github/last-commit/montilab/hyperdb.svg)](https://github.com/montilab/hyperdb/commits/master) 
 [![](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
