@@ -1,7 +1,7 @@
 RefMet
 =====
 
-### Usage
+## Usage
   
 ```r
 get.rgsets <- function(rgsets) {
@@ -12,6 +12,21 @@ get.rgsets <- function(rgsets) {
             httr::write_disk(temp, overwrite=TRUE))    
   return(readRDS(temp))
 }
-
-refmet <- get.rgsets("REFMET/RMSETS_RefMet_2022_05_11.rds")
 ```
+
+### Download RefMet metabolite-sets compendium
+
+```r
+refmet <- get.rgsets("REFMET/RMSETS_RefMet_2022_05_11")
+length(refmet$genesets)
+quantile(sapply(refmet$genesets,length))
+```
+
+### Filter out msets with <5 metabolites
+
+```r
+refmet$genesets <- refmet$genesets[sapply(refmet$genesets,length)>=5]
+length(refmet$genesets)
+quantile(sapply(refmet$genesets,length))
+```
+
